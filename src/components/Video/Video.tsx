@@ -10,7 +10,7 @@ interface Props {
 const VideoRoot = styled(Box)`
   ::before {
     content: "";
-    padding-top: 56%;
+    padding-top: 52.7%;
     display: block;
   }
 `
