@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Header, Wrapper, ProductCard, Box, Text } from "../../components"
+import { Wrapper, ProductCard, Box, Text } from "../../components"
 
 export const Product = ({ pathContext: { product } }) => {
   return (
     <Wrapper width="700px">
-      <Header />
       <ProductCard product={product} />
       <Box p={4}>
         <Text as="h1" fontSize="1.8rem">

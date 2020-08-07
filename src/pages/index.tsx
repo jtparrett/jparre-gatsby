@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { SEO, Header, Box, Button, Video } from "../components"
+import { SEO, Box, Button, Video } from "../components"
 
 const Home = () => (
   <Box>
     <SEO title="Home" />
-    <Header />
 
     <Video src="https://www.youtube.com/embed/SzJTzt2Hy74" />
 

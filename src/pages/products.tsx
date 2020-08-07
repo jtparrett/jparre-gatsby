@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { Header, Wrapper, Grid, ProductCard } from "../components"
+import { Wrapper, Grid, ProductCard } from "../components"
 
 const Products = () => {
   const data = useStaticQuery(graphql`
@@ -25,7 +25,6 @@ const Products = () => {
 
   return (
     <Wrapper>
-      <Header />
       <Grid gridTemplateColumns="repeat(3, 1fr)" gridGap={1}>
         {data?.shopify?.shop?.collectionByHandle?.products?.edges?.map(
           ({ node }) => (
