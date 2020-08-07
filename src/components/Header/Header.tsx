@@ -10,7 +10,15 @@ const Logo = styled.img`
 `
 
 export const Header = () => (
-  <Box to="/" as={Link} mb={5} mt={6} mx="auto" display="block" width="140px">
+  <Box
+    to="/"
+    as={Link}
+    mt={[5, 6]}
+    mb={[4, 5]}
+    mx="auto"
+    display="block"
+    width="140px"
+  >
     <Logo src="/logo.svg" />
   </Box>
 )

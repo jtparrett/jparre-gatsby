@@ -9,7 +9,7 @@ const Home = () => (
 
     <Video src="https://www.youtube.com/embed/SzJTzt2Hy74" />
 
-    <Box textAlign="center" mt={5}>
+    <Box textAlign="center" mt={[4, 5]} mb={3}>
       <Button as={Link} to="/products">
         Shop the collection &rarr;
       </Button>
