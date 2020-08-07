@@ -12,6 +12,7 @@
     "@types/styled-system__should-forward-prop": "^5.1.1",
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.26",
+    "gatsby-plugin-generate-typings": "^0.9.9",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-react-helmet": "^3.3.10",

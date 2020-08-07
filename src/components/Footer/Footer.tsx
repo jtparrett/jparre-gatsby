@@ -12,7 +12,7 @@ const PageLink = styled(Text).attrs({
   color: ${props => props.theme.colors.shaded};
 `
 
-export const Footer = () => (
+export const Footer: React.FC = () => (
   <Box textAlign="center" mt={[4, 5]} pb={5}>
     <Text mb={2}>J.Parré Apparel Co.</Text>
     <PageLink to="/products">Products</PageLink>

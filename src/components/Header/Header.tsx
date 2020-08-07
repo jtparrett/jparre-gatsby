@@ -9,7 +9,7 @@ const Logo = styled.img`
   width: 100%;
 `
 
-export const Header = () => (
+export const Header: React.FC = () => (
   <Box
     to="/"
     as={Link}

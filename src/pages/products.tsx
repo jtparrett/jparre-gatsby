@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { Wrapper, Grid, ProductCard } from "../components"
+import { SEO, Wrapper, Grid, ProductCard } from "../components"
 
-const Products = () => {
+const Products: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       shopify {
@@ -25,6 +25,7 @@ const Products = () => {
 
   return (
     <Wrapper>
+      <SEO title="Products" />
       <Grid gridTemplateColumns="repeat(3, 1fr)" gridGap={1}>
         {data?.shopify?.shop?.collectionByHandle?.products?.edges?.map(
           ({ node }) => (

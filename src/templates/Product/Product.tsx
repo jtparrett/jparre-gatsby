@@ -1,11 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Wrapper, ProductCard, Box, Text } from "../../components"
+import { SEO, Wrapper, ProductCard, Box, Text } from "../../components"
+import { Shopify_Product } from "../../generated/graphql-types"
 
-export const Product = ({ pathContext: { product } }) => {
+interface Props {
+  pathContext: {
+    product: Shopify_Product
+  }
+}
+
+export const Product: React.FC<Props> = ({ pathContext: { product } }) => {
   return (
     <Wrapper width="700px">
+      <SEO title={product?.title} description={product?.description} />
       <ProductCard product={product} />
       <Box p={4}>
         <Text as="h1" fontSize="1.8rem">

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import { SEO, Box, Button, Video } from "../components"
 
-const Home = () => (
+const Home: React.FC = () => (
   <Box>
     <SEO title="Home" />
 

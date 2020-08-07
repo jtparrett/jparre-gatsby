@@ -12,6 +12,7 @@ exports.createPages = async ({ actions, graphql }) => {
                   id
                   title
                   handle
+                  description
                   descriptionHtml
                   variants(first: 1) {
                     edges {

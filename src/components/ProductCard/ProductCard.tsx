@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
 import { Box } from "../Box"
+import { Shopify_Product } from "../generated/graphql-types"
 
 const Media = styled.img`
   position: absolute;
@@ -14,7 +15,11 @@ const Media = styled.img`
   max-height: 75%;
 `
 
-export const ProductCard = ({ product }) => (
+interface Props {
+  product: Shopify_Product
+}
+
+export const ProductCard: React.FC<Props> = ({ product }) => (
   <Box
     as={Link}
     to={`/products/${product.handle}`}
